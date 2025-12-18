@@ -37,13 +37,13 @@ function GettingStartedContent({ inView }: { inView?: boolean }) {
         )}
         style={{ transitionDelay: "400ms" }}
       >
-        <Link href="/demo">
+        <Link href="https://solvia-web.fremn.com" target="_blank" rel="noopener noreferrer">
           <HoverBorderGradient
             containerClassName="rounded-full"
             as="button"
             className="bg-white text-black flex items-center space-x-3 px-8 py-4 text-lg font-semibold"
           >
-            <span>Request a Demo</span>
+            <span>Try it Out</span>
             <ArrowRight className="h-5 w-5" />
           </HoverBorderGradient>
         </Link>

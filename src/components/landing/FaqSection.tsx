@@ -7,25 +7,61 @@ import { AnimatedSection } from "./AnimatedSection";
 const faqs = [
   {
     question: "What is Solvia?",
-    answer: "Solvia is a comprehensive SaaS platform designed to help businesses streamline operations, analyze data, and foster collaboration. It combines powerful analytics and reporting with an intuitive user interface."
+    answer:
+      "Solvia is an AI-powered customer support and operations platform that helps businesses handle customer queries across chat, with optional human escalation through a real-time dashboard."
   },
   {
     question: "Who is Solvia for?",
-    answer: "Solvia is built for teams of all sizes, from startups to large enterprises. Our scalable architecture and flexible pricing plans ensure that there's a fit for every organization looking to become more data-driven."
+    answer:
+      "Solvia is built for small and medium organizations such as educational institutions, clinics, real estate agencies, hospitality businesses, and ecommerce brands that receive repetitive customer queries."
+  },
+  {
+    question: "Does Solvia replace human agents?",
+    answer:
+      "No. Solvia automates repetitive queries and tasks. Human agents can step in at any time through the dashboard for complex or sensitive conversations."
+  },
+  {
+    question: "What channels does Solvia support?",
+    answer:
+      "Currently, Solvia supports website and in-app chat. WhatsApp support is coming soon."
+  },
+  {
+    question: "How does Solvia provide accurate answers?",
+    answer:
+      "Solvia uses AI combined with a knowledge base (RAG) where businesses can upload FAQs, documents, and content. This ensures responses are accurate and context-aware."
+  },
+  {
+    question: "Can Solvia perform actions like checking status or booking appointments?",
+    answer:
+      "Solvia currently focuses on support automation. Business Tools Integration (MCP) is coming soon, which will allow Solvia to securely connect with business systems to perform actions such as status checks, bookings, and updates."
   },
   {
     question: "Is my data secure?",
-    answer: "Absolutely. We prioritize security above all else. Our platform is built with enterprise-grade security features, including role-based access control and data encryption, to ensure your information is always protected."
+    answer:
+      "Yes. Each organization’s data is isolated, encrypted, and securely managed. Solvia does not use customer data to train AI models."
   },
   {
-    question: "Can I integrate Solvia with other tools?",
-    answer: "Yes! Solvia is designed to fit into your existing ecosystem. We offer a range of integrations with popular tools for CRM, project management, and communication. We are also constantly expanding our integration library."
+    question: "Do I need technical knowledge to use Solvia?",
+    answer:
+      "No. Solvia is designed to be simple and easy to set up. Most organizations can get started within minutes."
   },
   {
-    question: "What kind of support do you offer?",
-    answer: "We offer comprehensive support to all our customers. Our Professional plan includes standard email support, while our Enterprise plan provides a dedicated account manager and priority support channels."
+    question: "What are the pricing plans?",
+    answer:
+      "Solvia offers a free plan for manual operator-based support and a paid plan with full AI automation. Pricing is kept simple for early adopters."
+  },
+  {
+    question: "Is Solvia production-ready?",
+    answer:
+      "Solvia is currently in MVP and early-access stage. We are actively onboarding early users and improving the product based on real feedback."
+  },
+  {
+    question: "How can I get access?",
+    answer:
+      "You can request access through our website or contact the team directly for early onboarding."
   }
 ];
+
 
 function FaqContent({ inView }: { inView?: boolean }) {
   return (

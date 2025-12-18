@@ -11,65 +11,76 @@ const features = [
   {
     icon: Zap,
     title: "Lightning Fast Performance",
-    description: "Experience blazing-fast load times and seamless interactions that keep your team productive."
+    description:
+      "Experience blazing-fast load times and seamless interactions that keep your team productive.",
   },
   {
     icon: Shield,
     title: "Enterprise-Grade Security",
-    description: "Bank-level encryption and compliance standards protect your sensitive business data."
+    description:
+      "Bank-level encryption and compliance standards protect your sensitive business data.",
   },
   {
     icon: BarChart3,
     title: "Real-Time Analytics",
-    description: "Get instant insights with live dashboards that update as your business grows."
+    description:
+      "Get instant insights with live dashboards that update as your business grows.",
   },
   {
     icon: Workflow,
     title: "Seamless Integrations",
-    description: "Connect with your existing tools effortlessly through our robust API ecosystem."
-  }
+    description:
+      "Connect with your existing tools effortlessly through our robust API ecosystem.",
+  },
 ];
 
 function VideoContent({ inView }: { inView?: boolean }) {
-  const videoThumbnail = PlaceHolderImages.find(p => p.id === 'video-thumbnail');
-  
+  const videoThumbnail = PlaceHolderImages.find(
+    (p) => p.id === "video-thumbnail"
+  );
+
   return (
     <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       {/* Video Side */}
-      <div className={cn(
-        "transition-all duration-700 ease-out",
-        inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-      )}>
+      <div
+        className={cn(
+          "transition-all duration-700 ease-out",
+          inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+        )}
+      >
         <Card className="overflow-hidden group glass-card cursor-pointer hover:scale-[1.02] transition-all duration-300 ease-out transform-gpu">
           <CardContent className="p-0 relative">
             {videoThumbnail && (
-              <Image
-                src={videoThumbnail.imageUrl}
-                alt={videoThumbnail.description}
-                width={1024}
-                height={576}
-                className="w-full h-auto opacity-70 group-hover:opacity-100 transition-opacity"
-                data-ai-hint={videoThumbnail.imageHint}
+              <video
+                src={"/vid/solvia.mp4"}
+                className="w-full h-auto opacity-100 group-hover:opacity-100 transition-opacity"
+                muted
+                loop
+                playsInline
+                controls
+                onMouseEnter={(e) => e.currentTarget.pause()}
+                onMouseLeave={(e) => e.currentTarget.play()}
+                autoPlay
               />
             )}
-            <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
-              <PlayCircle className="h-20 w-20 text-white/80 transform-gpu transition-transform duration-300 ease-out group-hover:scale-110 group-hover:text-white" />
-            </div>
           </CardContent>
         </Card>
       </div>
 
       {/* Text Side */}
-      <div className={cn(
-        "transition-all duration-700 ease-out",
-        inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
-      )}
-      style={{ transitionDelay: "200ms" }}>
+      <div
+        className={cn(
+          "transition-all duration-700 ease-out",
+          inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
+        )}
+        style={{ transitionDelay: "200ms" }}
+      >
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-headline mb-4">
           See Solvia in Action
         </h2>
         <p className="text-lg text-muted-foreground mb-8">
-          Watch how Solvia transforms complex workflows into simple, intuitive processes that drive results.
+          Watch how Solvia transforms complex workflows into simple, intuitive
+          processes that drive results.
         </p>
 
         <div className="space-y-6">
@@ -80,7 +91,9 @@ function VideoContent({ inView }: { inView?: boolean }) {
                 key={feature.title}
                 className={cn(
                   "flex gap-4 transition-all duration-500 ease-out",
-                  inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  inView
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-4"
                 )}
                 style={{ transitionDelay: `${300 + index * 100}ms` }}
               >
@@ -88,7 +101,9 @@ function VideoContent({ inView }: { inView?: boolean }) {
                   <Icon className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">{feature.title}</h3>
+                  <h3 className="font-semibold text-lg mb-1">
+                    {feature.title}
+                  </h3>
                   <p className="text-muted-foreground">{feature.description}</p>
                 </div>
               </div>
