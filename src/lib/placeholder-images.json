@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-illustration",
+      "description": "An editorial illustration of anthropomorphic buildings.",
+      "imageUrl": "https://images.unsplash.com/photo-1549294816-95d1167843d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlZGl0b3JpYWwlMjBpbGx1c3RyYXRpb24lMjBidWlsZGluZ3N8ZW58MHx8fHwxNzY2MDM5MDczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "editorial illustration buildings"
+    },
+    {
+      "id": "video-thumbnail",
+      "description": "Thumbnail for the Solvia in Action video.",
+      "imageUrl": "https://images.unsplash.com/photo-1758780690553-8bc703fabca6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2Z0d2FyZSUyMGludGVyZmFjZXxlbnwwfHx8fDE3NjYwMzkwNzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software interface"
+    }
+  ]
+}
