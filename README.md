@@ -32,16 +32,6 @@ Built with a clean design system, subtle micro-animations, and scalable architec
 
 ---
 
-## 📂 Project Structure
-
-src/
-├─ app/ # App Router pages & layouts
-├─ components/
-│ ├─ ui/ # Reusable UI primitives
-│ ├─ landing/ # Landing page sections
-├─ lib/ # Utilities & helpers
-└─ public/ # Static assets
-
 yaml
 Copy code
 
