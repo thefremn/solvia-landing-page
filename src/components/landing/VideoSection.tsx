@@ -79,8 +79,7 @@ function VideoContent({ inView }: { inView?: boolean }) {
           See Solvia in Action
         </h2>
         <p className="text-lg text-muted-foreground mb-8">
-          Watch how Solvia transforms complex workflows into simple, intuitive
-          processes that drive results.
+          Watch how Solvia transforms complex support scenarios into seamless customer experiences.
         </p>
 
         <div className="space-y-6">

@@ -26,14 +26,14 @@ export function HeroSection({ id }: { id: string }) {
         <div className="grid grid-rows-[auto_1fr] gap-0 items-center max-w-5xl mx-auto">
           
           {/* TEXT CONTENT */}
-          <div className="space-y-5 max-w-2xl mx-auto text-center">
+          <div className="space-y-5 max-w-3xl mx-auto text-center">
             <h1
               className={cn(
-                "text-4xl md:text-5xl lg:text-6xl font-extrabold font-headline tracking-tighter transition-all duration-500 ease-out",
+                "text-3xl md:text-4xl lg:text-5xl font-extrabold font-headline tracking-tighter transition-all duration-500 ease-out pt-1",
                 loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               )}
             >
-              Simplified Solution for SMEs
+              AI That Answers Your Customer Chats & Calls Automatically
             </h1>
 
             <p
@@ -43,7 +43,7 @@ export function HeroSection({ id }: { id: string }) {
               )}
               style={{ transitionDelay: "200ms" }}
             >
-              Plug & Use AI support system without the hassle of complex setup.
+              Solvia helps small and growing businesses handle customer support 24/7 — without hiring more staff.
             </p>
 
             <div
@@ -54,7 +54,7 @@ export function HeroSection({ id }: { id: string }) {
               style={{ transitionDelay: "350ms" }}
             >
               <Button asChild size="lg">
-                <Link href="#get-started" className="flex items-center">
+                <Link href="https://solvia-web.fremn.com/" className="flex items-center">
                   Get Started <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
