@@ -77,7 +77,7 @@ increasing administrative burden.
           >
             {heroImage && (
               <Image
-                src="/img/Homepage-illustrations.png"
+                src="/img/Solvia_Edu.png"
                 alt={heroImage.description}
                 fill
                 priority
